@@ -1,1 +1,43 @@
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yemo Burger - Order Online</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to Yemo Burger</h1>
+        <nav>
+            <button onclick="showSection('drinks')">Drinks</button>
+            <button onclick="showSection('snacks')">Snacks</button>
+            <button onclick='showCart()'>View Cart</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="drinks" class="product-section">
+            <h2>Drinks Menu</h2>
+            <div class="products"></div>
+        </section>
+
+        <section id="snacks" class="product-section" style="display:none;">
+            <h2>Snacks Menu</h2>
+            <div class="products"></div>
+        </section>
+
+        <section id="cart" style="display:none;">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yemo Burger</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
